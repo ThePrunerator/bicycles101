@@ -2,18 +2,128 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>About me</title>
   </head>
 
   <body>
     <style>
-      p {
+      html, body {
+          background: black;
+          -webkit-font-smoothing: antialiased;
+          color: white;
+      }
+
+      h1 {
         text-align: center;
-        font-size: 30px;
+      }
+
+      h1 span {
+        text-align: center;
+        font-size: 5vw;
+        position: relative;
+        top: 20px;
+        display: inline-block;
+        animation: bounce .3s ease infinite alternate;
+        font-family: 'Titan One'cursive;
+        color: #fff;
+        text-shadow: 0 1px 0 grey,
+          0 2px 0 grey,
+          0 3px 0 grey,
+          0 4px 0 grey,
+          0 5px 0 grey,
+          0 6px 0 transparent,
+          0 7px 0 transparent,
+          0 8px 0 transparent,
+          0 9px 0 transparent,
+          0 10px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 span:nth-child(2) {
+          animation-delay: .1s;
+      }
+
+      h1 span:nth-child(3) {
+          animation-delay: .2s;
+      }
+
+      h1 span:nth-child(4) {
+          animation-delay: .3s;
+      }
+
+      h1 span:nth-child(5) {
+          animation-delay: .4s;
+      }
+
+      h1 span:nth-child(6) {
+          animation-delay: .5s;
+      }
+
+      h1 span:nth-child(7) {
+          animation-delay: .6s;
+      }
+
+      h1 span:nth-child(8) {
+          animation-delay: .7s;
+      }
+
+      @keyframes bounce {
+          100% {
+              top: -20px;
+              text-shadow: 0 1px 0 #CCC,
+                  0 2px 0 #CCC,
+                  0 3px 0 #CCC,
+                  0 4px 0 #CCC,
+                  0 5px 0 #CCC,
+                  0 6px 0 #CCC,
+                  0 7px 0 #CCC,
+                  0 8px 0 #CCC,
+                  0 9px 0 #CCC,
+                  0 50px 25px rgba(0, 0, 0, 0.2);
+          }
+      }
+
+      .content {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-family: fantasy;
+        font-size: 2vw;
+        text-align: justify;
       }
     </style>
 
-    <p>
-      Sorry! This page has not been finished yet. Stay tuned for more info!
-    </p>
+    <div>
+      <h1>
+        <p>
+          <span>A</span>
+          <span>b</span>
+          <span>o</span>
+          <span>u</span>
+          <span>t</span>
+        </p>
+
+        <p>
+          <span>M</span>
+          <span>e</span>
+        </p>
+      </h1>
+    </div>
+
+    <div class="content">
+      <p>
+        Hello, I am Yee Teck, a computing student in VJC. Coding is a hobby
+        of mine, although I am still picking up the basics. I hope that the websites I have
+        created so far were up to your expectations. Here are some website(s) that I have
+        made so far:
+      </p>
+
+      <ul>
+        <li><a href="index.html">Bicycles 101</a></li>
+      </ul>
+
+      <p>
+        Be sure to check out this page from time to time to view some new websites that I
+        have created!
+      </p>
+    </div>
   </body>
